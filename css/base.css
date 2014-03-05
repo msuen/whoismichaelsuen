@@ -76,7 +76,8 @@
 	h2.big-text { font-size:64px; }
 
 	.wf-loading p { visibility: hidden; }
-	.wf-active p { visibility: visible; font-size: 22px; font-size: 2.2rem; margin: 0 0 20px 0; line-height: 1.5; }
+	.wf-active p { visibility: visible; }
+	p { font-size: 22px; font-size: 2.2rem; margin: 0 0 20px 0; line-height: 1.5; }
 	p img { margin: 0; }
 
 	em { font-style: italic; }
