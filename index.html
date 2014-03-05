@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Who Is Michael Suen?</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/layout.css">
+	<link href='http://fonts.googleapis.com/css?family=Roboto:300,700|Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+	
+	<!-- Scripts
+	================================================== -->
+	<script src="js/jquery-1.8.2.min.js"></script>
+	<!--<script src="js/jquery.scrollTo-1.4.3.1.min.js"></script>
+	<script src="js/jquery.scrollorama.js"></script>-->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.scrolldeck.js"></script>
+	<!-- <script src="js/jquery.spritely-0.6.js"></script> -->
+	<script src="js/modernizr.js"></script>
+	<script>
+		if (!Modernizr.mq('only screen and (max-width: 767px)')) {
+			$(function() {
+			$('#fds div').each(function(i) {
+				$(this).delay((i++) * 500).fadeTo(1000, 1); })
+				});
+		}
+	</script>
+	<script>
+		$(window).resize(function() {
+    $('.slide').height($(window).height());
+		});
+		$(window).trigger('resize');
+	</script>
+	<script>
+		if (!Modernizr.svg) { 
+	    $("#me-icon").css("background-image", "url(images/me-icon.png)");
+	    $("#me-full").css("background-image", "url(images/me-full.png)");
+	    $(".down-arrow").css("background-image", "url(images/down-arrow.png)");
+	    $(".new").css("background-image", "url(images/new.png)");    
+		}
+	</script>
+	<script type="text/javascript">
+	  (function() {
+	    var config = {
+	      kitId: 'jac7nfv',
+	      scriptTimeout: 3000
+	    };
+	    var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
+	  })();
+  	</script>
+
+</head>
+<body>
+
+
+	<!-- Primary Page Layout
+	================================================== -->
+
+	<!-- Delete everything in this .container and get started on your own site! -->
+		<div class="container">
+			<div class="slide" id="fds">
+				<center>
+					<div><img src="images/me-icon.svg" class="add-2x-bottom" id="me-icon"></div>
+					<div><h3 class="uppercase remove-bottom wspaced-10 lspaced-5">This is</h3></div>
+					<div><h1 class="add-bottom uppercase lspaced-10">Michael Suen</h1></div>
+					<div><p class="remove-bottom">I'm an interactive producer, designer, and writer.</p></div>
+					<div><a class="contact" href="mailto:msuen89@gmail.com"><p>Email</p></a><a class="contact" href="http://www.facebook.com/msuen"><p>Facebook</p></a><a class="contact" href="http://www.twitter.com/poetichentai"><p class="remove-right">Twitter</p></a></div>
+				</center>
+			</div>
+			<div class="slide group" id="about">
+				<center>
+					<div class="sixteen columns">
+						<div class="row">
+							<div class="five columns animate-in" data-animation="fly-in-left"><img src="images/me-full.svg" width="auto" height="500px" class="add-bottom" id="me-full"></div>
+							<div class="ten columns">
+								<h2 class="align-left center-if-mobile">About</h2>
+								<p class="align-left">Michael Suen is an interactive producer, designer, and writer.</p>
+								<p class="align-left">Spawned in the tar pits of Los Angeles, raised by capitalist wolves in Hong Kong, and educated on the frozen tundra of Vermont, Michael now makes his nest in Cambridge, MA. Most recently, he was a producer at <a href="http://www.learninggamesnetwork.org/">Learning Games Network</a>, where he helped build educational games and initiatives.</p>
+								<p class="align-left">You can find him rousing the rabble on <a href="http://www.facebook.com/msuen">Facebook</a>, <a href="http://www.twitter.com/poetichentai">Twitter</a>, <a href="http://www.linkedin.com/in/michaelsuen">LinkedIn</a>, or <a href="http://www.instagram.com/poetichentai">Instagram</a>.</p>
+							</div>
+						</div>
+					</div>
+				</center>
+			</div>
+			<div class="slide scrollblock" id="updates">
+			<!-- <div id="far-clouds" class=" far-clouds stage "></div>
+			<div id="near-clouds" class=" near-clouds stage "></div> -->
+				<center>
+				<div class="sixteen columns subtract-top">
+					<div class="row">
+						<div class="eleven columns">
+							<h2 class="align-left center-if-mobile big-text">In 2013...</h2>
+							<p class="align-left">I <a href="http://mediacommons.futureofthebook.org/imr/2013/10/10/search-end-beach">wrote about</a> the post-apocalyptic film <em>On the Beach</em></a> in <em>In Media Res</em>.</p>
+							<p class="align-left">I was a teaching assistant for MIT's <a href="http://stellar.mit.edu/S/course/CMS/fa13/CMS.615/index.html">Games for Social Change</a> course.</p>
+							<p class="align-left">I co-designed <a href="http://www.molyjam.com/games/117">a "cooperative rhythm prison simulator"</a> at MolyJam 2013 that was featured on IndieGames.com.
+							<p class="align-left">I led the redesign of <a href="http://www.learninggam.es">Learning Games Network's website</a>.</p>
+							<p class="align-left">I spoke about video games and digital humanities at <a href="http://hastac2013.org/">HASTAC 2013</a>.</p>
+							<p class="align-left">I produced the game design competition Create UNAOC and presented the results at the 5th UNAOC Forum. Voice of America <a href="http://blogs.voanews.com/science-world/2013/03/22/international-appsgames-competition-ends-with-selection-of-five-finalists/">interviewed me about the contest</a>.</p>
+						</div>
+						<div class="five columns animate-in add-more-bottom" data-animation="fly-in-bottom"><img src="images/intheair.svg" width="100%"></div>
+					</div>
+				</div>
+				</center>
+			</div>
+			<!--<div class="slide" id="portfolio">
+			<div class="sixteen columns">
+				<div class="row">
+					<div class="four columns"></div>
+					<div class="four columns"></div>
+					<div class="four columns"></div>
+					<div class="four columns"></div>
+				</div>
+			</div>
+			</div>-->
+			<div class="slide" id="contact">
+				<center>
+				<h2 class="add-top">Get in touch!</h2>
+				<h3><a href="mailto:msuen89@gmail.com">msuen89 at gmail dot com</a></h3>
+				<br><br>
+				<a href="http://www.facebook.com/msuen"><i class="icon-facebook-sign icon-4x"></i></a> <a href="http://www.twitter.com/poetichentai"><i class="icon-twitter-sign icon-4x"></i></a> <a href="http://www.instagram.com/poetichentai"><i class="icon-instagram icon-4x"></i></a> <a href="http://www.linkedin.com/in/michaelsuen"><i class="icon-linkedin-sign icon-4x last-icon"></i></a>
+				</center>
+			</div>
+		</div>
+	<!-- container -->
+	<!--
+		<nav id="bt-menu" class="bt-menu">
+			<a href="#" class="bt-menu-trigger"><span>Menu</span></a>
+			<ul>
+				<li><a href="#about" class="bt-icon icon-male">About</a></li>
+				<li><a href="#updates" class="bt-icon icon-exclamation-sign">Updates</a></li>
+				<li><a href="#notes" class="bt-icon icon-comment">Thoughts</a></li>
+				<li><a href="#projects" class="bt-icon icon-beaker">Projects</a></li>
+				<li><a href="#contact" class="bt-icon icon-envelope">Contact</a></li>
+			</ul>
+		</nav> -->
+
+<!-- End Document
+================================================== -->
+
+<script>
+$(document).ready(function() {
+   $(window).resize();
+});
+$(window).resize(function() {
+   if ($(this).width() > 1024 ) {
+	  $(document).ready(function() {
+		  
+			var deck = new $.scrolldeck({
+				buttons: '.nav-button',
+				easing: 'easeInOutExpo'
+			});
+			
+			// add other animations using the scrolldeck.controller (see Scrollorama plugin)
+			console.log(deck.controller);
+			deck.controller.animate('#instructions',{ duration: 100, property:'opacity', end: 0 });
+		  
+	  });
+	  
+   }
+});
+</script>
+<script>
+$(document).ready(function() {
+    $('#far-clouds').pan({fps: 60, speed: 0.2, dir: 'left'});
+    $('#near-clouds').pan({fps: 60, speed: 0.4, dir: 'left'});
+});
+</script>
+<script src="js/classie.js"></script>
+<script src="js/borderMenu.js"></script>
+</body>
+</html>
