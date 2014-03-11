@@ -7,6 +7,9 @@
 		height: 500px;
 		height: 50rem;
 		display: block;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
 	}
 	.align-left { text-align: left; }
 	.align-right { text-align: right; }
@@ -18,7 +21,7 @@
 	#fds a.contact p { float: left; margin-right: 40px; margin-right: 4rem; font-size: 20px; font-size: 2.0rem;}
 	.nav-button:hover img { margin-top: 3px; margin-top: 0.3rem; transition: 200ms ease; }
 	
-	#about { background-color: #7cc1a6; color: #fff; }
+	#about { background-color: #7cc1a6; color: #fff; padding: 50px 0 50px 0; padding: 5rem 0 5rem 0;}
 	#about a, #about a:visited { color: #fff; }
 	#about a:hover { color: #ef4723;}
 		
@@ -273,38 +276,38 @@
 
 	@media (min-width: 1401px) {
 		html {
-			font-size: 12px;
+			font-size: 13px;
 		}
 	}
 	
 	@media (max-width: 1400px) {
 		html {
-			font-size: 11px;
+			font-size: 12px;
 		}
 	}
 	
 	/* target screen width  */
 	@media (max-width: 1280px) {
 		html {
-			font-size: 10px;
+			font-size: 11px;
 		}
 	}
 		
 	@media (max-width: 1160px) {
 		html {
-			font-size: 9px;
+			font-size: 10px;
 		}
 	}
 		
 	@media (max-width: 1040px) {
 		html {
-			font-size: 8px;
+			font-size: 9px;
 		}
 	}
 		
 	@media (max-width: 960px) {
 		html {
-			font-size: 7px;
+			font-size: 9px;
 		}
 	}
 
@@ -314,7 +317,7 @@
 	/* All Mobile Sizes (devices and browser) */
 	@media only screen and (max-width: 767px) {
 	
-		html, body, .container { height: 100%; }
+		html, body, .container { height: 100%; font-size: 8px; }
 		
 		.slide {
 		position: relative !important;
@@ -367,10 +370,18 @@
 	}
 
 	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-	@media only screen and (min-width: 480px) and (max-width: 767px) {}
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+		html {
+			font-size: 7.5px;
+		}
+	}
 
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-	@media only screen and (max-width: 479px) {}
+	@media only screen and (max-width: 479px) {
+		html {
+			font-size: 7px;
+		}
+	}
 
 
 /* #Font-Face
