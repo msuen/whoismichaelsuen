@@ -15,7 +15,7 @@
 	#fds div { opacity: 0; }
 	#fds a.contact { display: inline-block; color: #fff; }
 	#fds a.contact:hover { color: #fc7c49; }
-	#fds a.contact p { float: left; margin-right: 40px; font-size: 20px; font-size: 2.0rem;}
+	#fds a.contact p { float: left; margin-right: 40px; margin-right: 4rem; font-size: 20px; font-size: 2.0rem;}
 	.nav-button:hover img { margin-top: 3px; margin-top: 0.3rem; transition: 200ms ease; }
 	
 	#about { background-color: #7cc1a6; color: #fff; }
@@ -37,7 +37,7 @@
 	
 	
 	#contact { background-color: #fffcf5; }
-	#contact h3 { font-size:60px;font-size:6rem }
+	#contact h3 { font-size:60px; font-size:6rem }
 	#contact a, #contact a:visited { color: #e3e0db; }
 	#contact a:hover { color: #ef4723; -webkit-transition: color 0.5s; transition: color 0.35s; }
 	#contact .icon-4x { margin-right: 40px; margin-right: 4rem; }
@@ -341,25 +341,26 @@
 		body {
 		font-family: "ff-meta-web-pro", "Helvetica", serif;
 		font-size: 24px;
+		font-size: 2.4rem;
 		-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
 		-webkit-text-size-adjust: 100%;
 		}
 		
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
-		h1 { font-size: 59px; line-height: 1.2;}
-		h2 { font-size: 46px; line-height: 50px; margin-bottom: 50px;}
-		h3 { font-size: 35px; line-height: 40px; margin-bottom: 10px; }
-		h4 { font-size: 28px; line-height: 34px; margin-bottom: 8px; }
-		h5 { font-size: 21px; line-height: 30px; margin-bottom: 4px; }
-		h6 { font-size: 17px; line-height: 24px; }
+		h1 { font-size: 59px; font-size: 5.9rem; line-height: 1.2;}
+		h2 { font-size: 46px; font-size: 4.6rem; line-height: 50px; margin-bottom: 50px;}
+		h3 { font-size: 35px; font-size: 3.5rem; line-height: 40px; margin-bottom: 10px; }
+		h4 { font-size: 28px; font-size: 2.8rem; line-height: 34px; margin-bottom: 8px; }
+		h5 { font-size: 21px; font-size: 2.1rem; line-height: 30px; margin-bottom: 4px; }
+		h6 { font-size: 17px; font-size: 1.7rem; line-height: 24px; }
 		
 		.wf-active p { visibility: visible; }
-		p { font-size: 24px; margin: 0 0 20px 0; line-height: 1.5; }
-		p.lead { font-size: 46px; line-height: 2.5; font-weight: 800;  }
+		p { font-size: 24px; font-size: 2.4rem; margin: 0 0 20px 0; line-height: 1.5; }
+		p.lead { font-size: 46px; font-size: 4.6rem; line-height: 2.5; font-weight: 800;  }
 		
 		.lspaced-5, .lspaced-10, .wspaced-10 { letter-spacing: 0; word-spacing: 0; }
 		
-		#tarpits, #capitalist { width: 85%; padding: 10px; }
+		#tarpits, #capitalist { width: 85%; padding: 10px; padding: 1rem; }
 
 
 	}

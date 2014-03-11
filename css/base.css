@@ -131,17 +131,17 @@
 /* #Misc
 ================================================== */
 	.remove-bottom { margin-bottom: 0 !important; }
-	.half-bottom { margin-bottom: 10px !important; }
-	.add-bottom { margin-bottom: 20px !important; }
-	.add-2x-bottom { margin-bottom: 40px !important; }
-	.add-4x-bottom { margin-bottom: 80px !important; }
-	.half-top { margin-top: 40px; }
-	.add-top { margin-top: 80px; }
-	.subtract-top { margin-top: -40px; }
+	.half-bottom { margin-bottom: 10px !important; margin-bottom: 1rem !important; }
+	.add-bottom { margin-bottom: 20px !important; margin-bottom: 2rem !important; }
+	.add-2x-bottom { margin-bottom: 40px !important; margin-bottom: 4rem !important; }
+	.add-4x-bottom { margin-bottom: 80px !important; margin-bottom: 8rem !important; }
+	.half-top { margin-top: 40px; margin-top: 4rem !important; }
+	.add-top { margin-top: 80px; margin-top: 8rem !important; }
+	.subtract-top { margin-top: -40px; margin-top: -4rem !important; }
 	
-	.lspaced-5 { letter-spacing: 5px; }
-	.lspaced-10 { letter-spacing: 10px; }
-	.wspaced-10 { word-spacing: 10px; }
+	.lspaced-5 { letter-spacing: 5px; letter-spacing: .5rem; }
+	.lspaced-10 { letter-spacing: 10px; letter-spacing: 1rem; }
+	.wspaced-10 { word-spacing: 10px; word-spacing: 1rem; }
 	.remove-right { margin-right: 0 !important; }
 
 
