@@ -28,7 +28,8 @@
 		margin: 0;
 		padding: 0;
 		border: 0;
-		font-family: "Roboto", "helvetica", serif; 
+		font-family: "Verlag A", "Verlag B", "helvetica", serif; 
+		font-weight: 400;
 		font-size: 100%;
 		vertical-align: baseline; }
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -51,7 +52,6 @@
 /* #Basic Styles
 ================================================== */
 	body {
-		font-family: "Roboto", "Helvetica", serif;
 		font-size: 20px;
 		font-size:2rem;
 		-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
@@ -62,7 +62,8 @@
 /* #Typography
 ================================================== */
 	h1, h2, h3, h4, h5, h6 {
-		font-family: "Montserrat", "Helvetica", sans-serif;
+		font-family: "Verlag A", "Verlag B", "Helvetica", sans-serif;
+		font-weight: 800;
 		}
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
 	h1 { font-size: 59px; font-size: 5.9rem; line-height: 1.0; }
@@ -81,7 +82,7 @@
 	p img { margin: 0; }
 
 	em { font-style: italic; }
-	strong { font-weight: bold; color: #333; }
+	strong { font-weight: 700; color: #333; }
 	small { font-size: 80%; }
 	.uppercase { text-transform:uppercase; }
 	.normal { font-weight: normal; }

@@ -26,6 +26,7 @@
 	img#me-full { height: 100%; width: auto; vertical-align: bottom; }
 	#about a:hover { color: #ef4723;}
 	#walking { width: 500px; height: 500px; margin: 30% 0 0 -30%; background: transparent url('../images/me-walking-sprites.png') 0 0 no-repeat; z-index: 9999; }
+	#walking-mobile { display: none; max-width: 100px; }
 		
 	#updates { background-color: #9cedff; color: #0084a1; }
 	#updates a, #updates a:visited { color: #0084a1; }
@@ -351,12 +352,15 @@
 		
 		#fds div { opacity: 1; }
 		
+		#about { padding-bottom: 100px; padding-bottom: 10rem;}
+		
 		#updates { padding-bottom: 40px; padding-bottom: 4rem; }
 		#updates img:hover { margin-top: 0; }
 		#updates img { max-height: 400px; width: auto; }
 		.far-clouds { background: transparent url(../images/far-clouds.svg) 305px 600px repeat-x; }
 		.near-clouds { background: transparent url(../images/near-clouds.svg) 305px 700px repeat-x; }
-		#walking {  margin: 0; }
+		#walking {  display: none; }
+		#walking-mobile { display: block; }
 		
 		#portfolio { padding: 0; height: auto; background-color: #fff; }
 		#portfolio .item {width: 100%; height: 200px; text-align: center; transition: all .5s; -webkit-transition: all .5s; z-index: 1;}
