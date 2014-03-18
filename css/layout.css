@@ -16,20 +16,20 @@
 	
 	#fds { font-size: 0; background-color: #ef4723; color: #fff; }
 	#fds div { opacity: 0; }
-	#fds a.contact { display: inline-block; color: #fff; }
-	#fds a.contact:hover { color: #fc7c49; }
+	#fds a.contact { display: inline-block; color: #fff; border-bottom: #fff; }
+	#fds a.contact:hover { color: #fc7c49; border-bottom: #none; }
 	#fds a.contact p { float: left; margin-right: 40px; margin-right: 4rem; font-size: 20px; font-size: 2.0rem;}
 	.nav-button:hover img { margin-top: 3px; margin-top: 0.3rem; transition: 200ms ease; }
 	
 	#about { background-color: #7cc1a6; color: #fff; padding-top: 65px; padding-top: 6.5rem;}
-	#about a, #about a:visited { color: #fff; }
+	#about a, #about a:visited { color: #fff; border-bottom: #fff; }
 	img#me-full { height: 100%; width: auto; vertical-align: bottom; }
-	#about a:hover { color: #ef4723;}
+	#about a:hover { color: #ef4723; border-bottom: #none; }
 	#walking { width: 500px; height: 500px; margin: 30% 0 0 -30%; background: transparent url('../images/me-walking-sprites.png') 0 0 no-repeat; z-index: 9999; }
 	#walking-mobile { display: none; max-width: 100px; }
 		
-	#updates { background-color: #9cedff; color: #0084a1; }
-	#updates a, #updates a:visited { color: #0084a1; }
+	#updates { background-color: #9cedff; color: #0084a1; border-bottom: #0084a1;  }
+	#updates a, #updates a:visited { color: #0084a1; border-bottom: none; }
 	#updates a:hover { color: #ef4723; }
 	#updates img { transition: 400ms ease; }
 	#updates img:hover { margin-top: -40px; }
@@ -305,19 +305,19 @@
 		
 	@media (max-width: 1160px) {
 		html {
-			font-size: 10px;
+			font-size: 11px;
 		}
 	}
 		
 	@media (max-width: 1040px) {
 		html {
-			font-size: 9px;
+			font-size: 10px;
 		}
 	}
 		
 	@media (max-width: 960px) {
 		html {
-			font-size: 9px;
+			font-size: 10px;
 		}
 	}
 
