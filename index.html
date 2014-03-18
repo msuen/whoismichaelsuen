@@ -103,23 +103,21 @@
 	<div class="container">
 		<div class="slide" id="fds">
 			<center>
-				<div><img src="images/me-icon.svg" class="add-2x-bottom" id="me-icon"></div>
-				<div><h3 class="uppercase remove-bottom wspaced-10 lspaced-5">This is</h3></div>
-				<div><h1 class="add-bottom uppercase lspaced-10">Michael Suen</h1></div>
-				<div><p class="remove-bottom">I'm an interactive producer, designer, and writer.</p></div>
-				<div><a class="contact" href="mailto:msuen89@gmail.com"><p>Email</p></a><a class="contact" href="http://www.facebook.com/msuen"><p>Facebook</p></a><a class="contact" href="http://www.twitter.com/poetichentai"><p class="remove-right">Twitter</p></a></div>
+				<div class="add-top"><img src="images/me-icon.svg" class="add-2x-bottom" id="me-icon"></div>
+				<div><h3 class="uppercase remove-bottom wspaced-10 lspaced-5">Who is</h3></div>
+				<div><h1 class="add-bottom uppercase lspaced-5">Michael Suen?</h1></div>
 			</center>
 		</div>
 		<div class="slide group" id="about">
 			<center>
 				<div class="sixteen columns">
 					<div class="row">
-						<div class="five columns"><img src="images/me-full.svg" id="me-full"></div>
+						<div class="five columns"><div id="walking"></div></div>
 						<div class="ten columns">
-							<h2 class="align-left center-if-mobile big-text">"Who?"</h2>
-							<p class="align-left">Michael Suen is a mediamaker and a troublemaker.</p>
+							
+							<p class="align-left">Michael Suen is an interactive producer, designer, and illustrator.</p>
 							<p class="align-left">Spawned in the <a href="#tarpits" rel="leanModal">tar pits</a> of Los Angeles, raised by <a href="#capitalist" rel="leanModal">capitalist wolves</a> in Hong Kong, and educated on the <a href="http://www.middlebury.edu/" target="_blank">frozen tundra</a> of Vermont, Michael explores intersections of storytelling, play, and participatory culture. Most recently, he was a producer at the <a href="http://www.learninggamesnetwork.org/">Learning Games Network</a>, where he helped build award-winning educational games and initiatives.</p>
-							<p class="align-left">His work has been featured in <a href="http://killscreendaily.com/articles/articles/feature/label-gear-solid-turns-stealth-game-lesson-queer-identity/" target="_blank">Kill Screen</a>, <a href="http://indiegames.com/2013/07/simon_and_dene_go_to_prison.html" target="_blank">IndieGames.com</a>, and <a href="http://blogs.voanews.com/science-world/2013/03/22/international-appsgames-competition-ends-with-selection-of-five-finalists/" target="_blank">Voice of America</a>. <a href="#about-more" rel="leanModal"><i>Want to learn more?</i></a></p>
+							<p class="align-left">His work has been featured in <a href="http://killscreendaily.com/articles/articles/feature/label-gear-solid-turns-stealth-game-lesson-queer-identity/" target="_blank">Kill Screen</a>, <a href="http://indiegames.com/2013/07/simon_and_dene_go_to_prison.html" target="_blank">IndieGames.com</a>, and <a href="http://blogs.voanews.com/science-world/2013/03/22/international-appsgames-competition-ends-with-selection-of-five-finalists/" target="_blank">Voice of America</a>. His resume is available here.</p>
 						</div>
 					</div>
 				</div>
@@ -201,6 +199,7 @@
 $(document).ready(function() {
     $('#far-clouds').pan({fps: 60, speed: 0.2, dir: 'left'});
     $('#near-clouds').pan({fps: 60, speed: 0.4, dir: 'left'});
+    $('#walking').sprite({fps: 8, no_of_frames: 8});
 });
 </script>
 <script src="js/classie.js"></script>
