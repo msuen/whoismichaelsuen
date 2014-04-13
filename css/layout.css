@@ -21,7 +21,7 @@
 	#fds a.contact p { float: left; margin-right: 40px; margin-right: 4rem; font-size: 20px; font-size: 2.0rem;}
 	.nav-button:hover img { margin-top: 3px; margin-top: 0.3rem; transition: 200ms ease; }
 	
-	#about { background-color: #7cc1a6; color: #fff; padding-top: 65px; padding-top: 6.5rem;}
+	#about { background-color: #26093C; color: #fff; padding-top: 65px; padding-top: 6.5rem;}
 	#about a, #about a:visited { color: #fff; border-bottom: #fff; }
 	img#me-full { height: 100%; width: auto; vertical-align: bottom; }
 	#about a:hover { color: #ef4723; border-bottom: #none; }
@@ -384,7 +384,7 @@
 		
 		.wf-active p { visibility: visible; }
 		p { font-size: 24px; font-size: 2.4rem; margin: 0 0 20px 0; line-height: 1.5; }
-		p.lead { font-size: 46px; font-size: 4.6rem; line-height: 2.5; font-weight: 800;  }
+		p.lead { font-size: 46px; font-size: 4.6rem; line-height: 1.3; font-weight: 800;  }
 		
 		.lspaced-5, .lspaced-10, .wspaced-10 { letter-spacing: 0; word-spacing: 0; }
 		
