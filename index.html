@@ -22,6 +22,7 @@
 	<link rel="stylesheet" href="css/base.css">
 	<link rel="stylesheet" href="css/skeleton.css">
 	<link rel="stylesheet" href="css/layout.css">
+	<link rel="stylesheet" href="css/parallax.css">
 	<link rel="stylesheet" type="text/css" href="//cloud.typography.com/6754892/689804/css/fonts.css" />
 	<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 
@@ -45,8 +46,7 @@
 	<script src="js/jquery.spritely-0.6.js"></script>
 	<script src="js/modernizr.js"></script>
 	<script>
-		if (!Modernizr.svg) { 
-	    $("#me-icon").attr("src", "images/me-icon.png");
+		if (!Modernizr.svg) {
 	    $("#me-full").attr("src", "images/me-full.png");
 	    $(".down-arrow").attr("src", "images/down-arrow.png");
 	    $(".new").attr("src", "images/new.png");
@@ -74,118 +74,124 @@
 	});
 	resizePages();
 	</script>
-	<script>
-		if (!Modernizr.mq('only screen and (max-width: 767px)')) {
-			$(function() {
-			$('#fds div').each(function(i) {
-				$(this).delay((i++) * 500).fadeTo(1000, 1); })
-				});
-		}
-		$(window).resize(function(e) {
-			$(function() {
-			$('#fds div').each(function(i) {
-				$(this).delay((i++) * 500).fadeTo(1000, 1); })
-				});
-		});
-	</script>
 </head>
 <body>
-
-	<div class="container">
-		<div class="slide" id="fds">
-			<center>
-				<div class="add-top"><img src="images/me-icon.svg" class="add-2x-bottom" id="me-icon"></div>
-				<div><h3 class="uppercase remove-bottom wspaced-10 lspaced-5">Who is</h3></div>
-				<div><h1 class="add-bottom uppercase lspaced-5">Michael Suen?</h1></div>
-			</center>
+	<div id="parallax">
+		<div class="parallax__layer parallax__layer__1">
+			<img src="images/bg8@2x.png">
 		</div>
-		<div class="slide group" id="about">
-			<center>
-				<div class="sixteen columns">
-					<div class="row">
-						<div class="five columns"><div id="walking"></div><img src="images/me-walking.svg" id="walking-mobile" class="add-2x-bottom"></div>
-						<div class="ten columns">
-							
-							<p class="align-left lead"><strong>Michael Suen makes media — and mischief.</strong></p>
-								<p class="align-left">Spawned in the <a href="#tarpits" rel="leanModal">tar pits</a> of Los Angeles, raised by <a href="#capitalist" rel="leanModal">capitalist wolves</a> in Hong Kong, and educated on the <a href="http://www.middlebury.edu/" target="_blank">ice planet</a> of Vermont, Michael is a designer, illustrator, and writer who straddles the intersections of meaningful design, storytelling, and participation. He cut his teeth as a digital producer for <a href="http://www.learninggamesnetwork.org/">Learning Games Network</a>, where he helped build award-winning educational projects and amplify them for broader audiences.</p>
-							<p class="align-left">Michael's work has been featured in <a href="http://killscreendaily.com/articles/articles/feature/label-gear-solid-turns-stealth-game-lesson-queer-identity/" target="_blank">Kill Screen</a>, <a href="http://indiegames.com/2013/07/simon_and_dene_go_to_prison.html" target="_blank">IndieGames.com</a>, and <a href="http://blogs.voanews.com/science-world/2013/03/22/international-appsgames-competition-ends-with-selection-of-five-finalists/" target="_blank">Voice of America</a>. He has presented on transmedia storytelling, games for learning, and social media at places like MIT, Bryn Mawr College, Brown University, and HASTAC. Michael lives in Cambridge, MA with his PlayStation.</p>
+		<div class="parallax__layer parallax__layer__2">
+			<img src="images/bg7@2x.png">
+		</div>
+		<div class="parallax__layer parallax__layer__3">
+			<img src="images/bg6@2x.png">
+		</div>
+		<div class="parallax__layer parallax__layer__4">
+			<img src="images/bg5@2x.png">
+		</div>
+		<div class="parallax__layer parallax__layer__5">
+			<img src="images/bg4@2x.png">
+		</div>
+		<div class="parallax__layer parallax__layer__6">
+			<img src="images/bg3@2x.png">
+		</div>
+		<div class="parallax__layer parallax__layer__7">
+			<img src="images/bg2@2x.png">
+		</div>
+		<div class="parallax__layer parallax__layer__8">
+			<img src="images/bg1@2x.png">
+		</div>
+		<div class="parallax__cover">
+			<div class="container">
+				<div class="slide group" id="about">
+					<center>
+						<div class="sixteen columns">
+							<div class="row">
+								<div class="five columns"><div id="walking"></div><img src="images/me-walking.svg" id="walking-mobile" class="add-2x-bottom"></div>
+								<div class="ten columns">
+									
+									<p class="align-left lead"><strong>Michael Suen makes media — and mischief.</strong></p>
+										<p class="align-left">Spawned in the <a href="#tarpits" rel="leanModal">tar pits</a> of Los Angeles, raised by <a href="#capitalist" rel="leanModal">capitalist wolves</a> in Hong Kong, and educated on the <a href="http://www.middlebury.edu/" target="_blank">ice planet</a> of Vermont, Michael is a designer, illustrator, and writer who straddles the intersections of meaningful design, storytelling, and participation. He cut his teeth as a digital producer for <a href="http://www.learninggamesnetwork.org/">Learning Games Network</a>, where he helped build award-winning educational projects and amplify them for broader audiences.</p>
+									<p class="align-left">Michael's work has been featured in <a href="http://killscreendaily.com/articles/articles/feature/label-gear-solid-turns-stealth-game-lesson-queer-identity/" target="_blank">Kill Screen</a>, <a href="http://indiegames.com/2013/07/simon_and_dene_go_to_prison.html" target="_blank">IndieGames.com</a>, and <a href="http://blogs.voanews.com/science-world/2013/03/22/international-appsgames-competition-ends-with-selection-of-five-finalists/" target="_blank">Voice of America</a>. He has presented on transmedia storytelling, games for learning, and social media at places like MIT, Bryn Mawr College, Brown University, and HASTAC. Michael lives in Cambridge, MA with his PlayStation.</p>
+								</div>
+							</div>
+						</div>
+					</center>
+				</div>
+				<div class="slide scrollblock" id="updates">
+				<div id="far-clouds" class=" far-clouds stage "></div>
+				<div id="near-clouds" class=" near-clouds stage "></div>
+				<div id="nearer-clouds" class=" nearer-clouds stage "></div>
+					<center>
+					<div class="sixteen columns">
+						<div class="row">
+							<div class="eleven columns">
+								<h2 class="align-left center-if-mobile big-text">"What's up, man?"</h2>
+								<p class="align-left">Michael will be co-facilitating the closing discussion at Brown University's <a href="http://www.reframinghk.com/" target="_blank">Reframing Hong Kong conference</a> on March 15.</p>
+								<p class="align-left"><a href="http://web.mit.edu/ssuen/www/quiltbag/" target="_blank">Label Gear Solid</a>, a stealth game designed by Michael and his brother Stephen during the MIT Game Lab's 2014 QUILTBAG Jam, was featured on <a href="http://killscreendaily.com/articles/articles/feature/label-gear-solid-turns-stealth-game-lesson-queer-identity/" target="_blank"> Kill Screen</a>.</p>
+								<p class="align-left"><a href="https://dl.dropboxusercontent.com/u/12420957/Courtship%2520Web.html" target="_blank">Courtship</a>, an observational game designed by Michael and his friends during the 2014 Global Game Jam, was featured on <a href="https://www.youtube.com/watch?v=hMnd444ejYg" target="_blank">Northeastern University TV News</a>.</p>
+							</div>
+							<div class="five columns"><img src="images/intheair.svg" width="100%"></div>
 						</div>
 					</div>
+					</center>
 				</div>
-			</center>
+				<div class="slide" id="portfolio">
+					<a href="/lgn/">
+						<div class="item" id="lgn">
+						</div>
+					</a>
+					<a href="/unaoc/">
+						<div class="item" id="unaoc">
+						</div>
+					</a>
+					<a href="/xenos/">
+						<div class="item" id="xenos">
+						</div>
+					</a>
+					<a href="/quandary/">
+						<div class="item" id="quandary">
+						</div>
+					</a>
+					<a href="/courtship/">
+						<div class="item" id="courtship">
+						</div>
+					</a>
+					<a href="/simon-dene/">
+						<div class="item" id="simondene">
+						</div>
+					</a>
+					<a href="/label-gear-solid/">
+						<div class="item" id="labelgearsolid">
+						</div>
+					</a>				
+					<a href="/21cb/">
+						<div class="item" id="twentyonecb">
+						</div>
+					</a>
+				</div>
+				<div class="slide" id="contact">
+					<center>
+					<h2 class="add-top">Get in touch!</h2>
+					<h3><a href="mailto:michael@suenlabs.com">michael at suenlabs dot com</a></h3>
+					<br><br>
+					<a href="http://www.facebook.com/msuen"><i class="icon-facebook-sign icon-4x"></i></a> <a href="http://www.twitter.com/poetichentai"><i class="icon-twitter-sign icon-4x"></i></a> <a href="http://www.instagram.com/poetichentai"><i class="icon-instagram icon-4x"></i></a> <a href="http://www.linkedin.com/in/michaelsuen"><i class="icon-linkedin-sign icon-4x last-icon"></i></a>
+					</center>
+				</div>
+				</div>
+			<!--
+				<nav id="bt-menu" class="bt-menu">
+					<a href="#" class="bt-menu-trigger"><span>Menu</span></a>
+					<ul>
+						<li><a href="#about" class="bt-icon icon-male">About</a></li>
+						<li><a href="#updates" class="bt-icon icon-exclamation-sign">Updates</a></li>
+						<li><a href="#notes" class="bt-icon icon-comment">Thoughts</a></li>
+						<li><a href="#projects" class="bt-icon icon-beaker">Projects</a></li>
+						<li><a href="#contact" class="bt-icon icon-envelope">Contact</a></li>
+					</ul>
+				</nav> -->
 		</div>
-		<div class="slide scrollblock" id="updates">
-		<div id="far-clouds" class=" far-clouds stage "></div>
-		<div id="near-clouds" class=" near-clouds stage "></div>
-		<div id="nearer-clouds" class=" nearer-clouds stage "></div>
-			<center>
-			<div class="sixteen columns">
-				<div class="row">
-					<div class="eleven columns">
-						<h2 class="align-left center-if-mobile big-text">"What's up, man?"</h2>
-						<p class="align-left">Michael will be co-facilitating the closing discussion at Brown University's <a href="http://www.reframinghk.com/" target="_blank">Reframing Hong Kong conference</a> on March 15.</p>
-						<p class="align-left"><a href="http://web.mit.edu/ssuen/www/quiltbag/" target="_blank">Label Gear Solid</a>, a stealth game designed by Michael and his brother Stephen during the MIT Game Lab's 2014 QUILTBAG Jam, was featured on <a href="http://killscreendaily.com/articles/articles/feature/label-gear-solid-turns-stealth-game-lesson-queer-identity/" target="_blank"> Kill Screen</a>.</p>
-						<p class="align-left"><a href="https://dl.dropboxusercontent.com/u/12420957/Courtship%2520Web.html" target="_blank">Courtship</a>, an observational game designed by Michael and his friends during the 2014 Global Game Jam, was featured on <a href="https://www.youtube.com/watch?v=hMnd444ejYg" target="_blank">Northeastern University TV News</a>.</p>
-					</div>
-					<div class="five columns"><img src="images/intheair.svg" width="100%"></div>
-				</div>
-			</div>
-			</center>
-		</div>
-		<div class="slide" id="portfolio">
-			<a href="/lgn/">
-				<div class="item" id="lgn">
-				</div>
-			</a>
-			<a href="/unaoc/">
-				<div class="item" id="unaoc">
-				</div>
-			</a>
-			<a href="/xenos/">
-				<div class="item" id="xenos">
-				</div>
-			</a>
-			<a href="/quandary/">
-				<div class="item" id="quandary">
-				</div>
-			</a>
-			<a href="/courtship/">
-				<div class="item" id="courtship">
-				</div>
-			</a>
-			<a href="/simon-dene/">
-				<div class="item" id="simondene">
-				</div>
-			</a>
-			<a href="/label-gear-solid/">
-				<div class="item" id="labelgearsolid">
-				</div>
-			</a>				
-			<a href="/21cb/">
-				<div class="item" id="twentyonecb">
-				</div>
-			</a>
-		</div>
-		<div class="slide" id="contact">
-			<center>
-			<h2 class="add-top">Get in touch!</h2>
-			<h3><a href="mailto:michael@suenlabs.com">michael at suenlabs dot com</a></h3>
-			<br><br>
-			<a href="http://www.facebook.com/msuen"><i class="icon-facebook-sign icon-4x"></i></a> <a href="http://www.twitter.com/poetichentai"><i class="icon-twitter-sign icon-4x"></i></a> <a href="http://www.instagram.com/poetichentai"><i class="icon-instagram icon-4x"></i></a> <a href="http://www.linkedin.com/in/michaelsuen"><i class="icon-linkedin-sign icon-4x last-icon"></i></a>
-			</center>
-		</div>
-		</div>
-	<!--
-		<nav id="bt-menu" class="bt-menu">
-			<a href="#" class="bt-menu-trigger"><span>Menu</span></a>
-			<ul>
-				<li><a href="#about" class="bt-icon icon-male">About</a></li>
-				<li><a href="#updates" class="bt-icon icon-exclamation-sign">Updates</a></li>
-				<li><a href="#notes" class="bt-icon icon-comment">Thoughts</a></li>
-				<li><a href="#projects" class="bt-icon icon-beaker">Projects</a></li>
-				<li><a href="#contact" class="bt-icon icon-envelope">Contact</a></li>
-			</ul>
-		</nav> -->
+	</div>
 <script>
 $(document).ready(function() {
     $('#far-clouds').pan({fps: 60, speed: 0.2, dir: 'left'});

@@ -1,3 +1,4 @@
+	.container { margin-top: 100vh;}
 	.slide {
 		position: relative;
 		margin: 0 auto;
@@ -13,15 +14,20 @@
 	}
 	.align-left { text-align: left; }
 	.align-right { text-align: right; }
-	
-	#fds { font-size: 0; background-color: #ef4723; color: #fff; }
-	#fds div { opacity: 0; }
+
+	#parallax {
+		min-height: 400px;
+		background: #f4e690;
+	}
+
+	#fds { font-size: 0; background-color: #f4e690; color: #fff;  padding: 0;}
+	#fds div { opacity: 1; }
 	#fds a.contact { display: inline-block; color: #fff; border-bottom: #fff; }
 	#fds a.contact:hover { color: #fc7c49; border-bottom: #none; }
 	#fds a.contact p { float: left; margin-right: 40px; margin-right: 4rem; font-size: 20px; font-size: 2.0rem;}
 	.nav-button:hover img { margin-top: 3px; margin-top: 0.3rem; transition: 200ms ease; }
 	
-	#about { background-color: #26093C; color: #fff; padding-top: 65px; padding-top: 6.5rem;}
+	#about { background-color: #1c0806; color: #fff; padding-top: 65px; padding-top: 6.5rem;}
 	#about a, #about a:visited { color: #fff; border-bottom: #fff; }
 	img#me-full { height: 100%; width: auto; vertical-align: bottom; }
 	#about a:hover { color: #ef4723; border-bottom: #none; }
