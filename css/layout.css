@@ -20,12 +20,9 @@
 		background: #f4e690;
 	}
 
-	#fds { font-size: 0; background-color: #f4e690; color: #fff;  padding: 0;}
-	#fds div { opacity: 1; }
-	#fds a.contact { display: inline-block; color: #fff; border-bottom: #fff; }
-	#fds a.contact:hover { color: #fc7c49; border-bottom: #none; }
-	#fds a.contact p { float: left; margin-right: 40px; margin-right: 4rem; font-size: 20px; font-size: 2.0rem;}
-	.nav-button:hover img { margin-top: 3px; margin-top: 0.3rem; transition: 200ms ease; }
+	header { position:absolute; left:0; right:0; margin-left:auto; margin-right:auto; width: 800px; text-align: center;}
+	header h1 { padding-top: 100px; }
+	header h6 { text-transform: uppercase; font-size: 22px; font-size: 2.2rem; }
 	
 	#about { background-color: #1c0806; color: #fff; padding-top: 65px; padding-top: 6.5rem;}
 	#about a, #about a:visited { color: #fff; border-bottom: #fff; }
@@ -33,13 +30,6 @@
 	#about a:hover { color: #ef4723; border-bottom: #none; }
 	#walking { width: 500px; height: 500px; margin: 30% 0 0 -30%; background: transparent url('../images/me-walking-sprites.png') 0 0 no-repeat; z-index: 9999; }
 	#walking-mobile { display: none; max-width: 100px; }
-		
-	#updates { background-color: #9cedff; color: #0084a1; border-bottom: #0084a1;  }
-	#updates a, #updates a:visited { color: #0084a1; border-bottom: none; }
-	#updates a:hover { color: #ef4723; }
-	#updates img { transition: 400ms ease; }
-	#updates img:hover { margin-top: -40px; }
-	#updates div.sixteen.columns { z-index: 100; position: relative;}
 	
 	#portfolio { background-color: #ccc; color: #fff; padding: 0; height: 680px; height: 68rem; }
 	#portfolio a { text-decoration: none; border-bottom: none; font-size: 0; }
@@ -71,9 +61,6 @@
 		overflow: hidden;
 		z-index: 0;
 	}
-	
-	.far-clouds { background: transparent url(../images/far-clouds.svg) 305px 252px repeat-x; }
-	.near-clouds { background: transparent url(../images/near-clouds.svg) 305px 402px repeat-x; }
 	
 		#bt-menu,
 	#bt-menu:after,

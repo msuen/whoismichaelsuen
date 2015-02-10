@@ -28,7 +28,8 @@
 		margin: 0;
 		padding: 0;
 		border: 0;
-		font-family: "Verlag A", "Verlag B", "helvetica", serif; 
+		font-family: "Sentinel Ssm A", "Sentinel Ssm B", "Georgia", sans-serif; 
+		letter-spacing: -1px;
 		font-weight: 400;
 		font-size: 100%;
 		vertical-align: baseline; }
@@ -61,10 +62,15 @@
 
 /* #Typography
 ================================================== */
-	h1, h2, h3, h4, h5, h6 {
-		font-family: "Verlag A", "Verlag B", "Helvetica", sans-serif;
+	h1, h2, h3 {
+		font-family: "Sentinel Ssm A", "Sentinel Ssm B", "Helvetica", sans-serif;
 		font-weight: 800;
 		}
+	h4, h5, h6 {
+		font-family: "Ideal Sans A", "Ideal Sans B", "Helvetica", sans-serif;
+		font-weight: 800;
+		letter-spacing: 1px;
+	}
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
 	h1 { font-size: 59px; font-size: 5.9rem; line-height: 1.0; }
 	h2 { font-size: 46px; line-height: 50px; margin-bottom: 50px;}

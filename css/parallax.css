@@ -18,6 +18,9 @@
     position: absolute;
     bottom: 0; 
     z-index: -10; }
+  .parallax__layer__2 {
+    bottom: -207px;
+  }
   .parallax__layer__7 img {
     bottom: 40px;
   }
