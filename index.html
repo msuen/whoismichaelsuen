@@ -23,6 +23,7 @@
 	<link rel="stylesheet" href="css/skeleton.css">
 	<link rel="stylesheet" href="css/layout.css">
 	<link rel="stylesheet" href="css/parallax.css">
+	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" type="text/css" href="//cloud.typography.com/6754892/689804/css/fonts.css" />
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
@@ -39,43 +40,16 @@
 	
 	<!-- Scripts
 	================================================== -->
-	<script src="js/jquery-1.8.2.min.js"></script>
+	<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
 	<script src="js/jquery.leanModal.min.js"></script>
-	<script src="js/jquery.scrollTo-1.4.3.1.min.js"></script>
-	<script src="js/jquery.easing.1.3.js"></script>
-	<script src="js/modernizr.js"></script>
-	<script>
-		if (!Modernizr.svg) {
-	    $(".down-arrow").attr("src", "images/down-arrow.png");
-	    $(".new").attr("src", "images/new.png");
-	    $("#intheair").attr("src", "images/intheair.png"); 
-		}
-	</script>
-	<script type="text/javascript">
-			$(function() {
-    			$('a[rel*=leanModal]').leanModal({ overlay : 0, top : 125});		
-			});
-		</script>
-  	<script> 
-  		function resizePages() {
-	var h = $(window).height();
-	var height  =  h < 806 ? 806 : h;
-	$('.slide').css('height',height);
-}
-
-	$(window).resize(function(e) {
-		resizePages();
-	});
-	resizePages();
-	$(document).ready(function(e) {
-		resizePages();
-	});
-	resizePages();
-	</script>
+	<script src="js/twitterFetcher_min.js"></script>
+	<!-- <script src="js/waypoint.js"></script> -->
+	<!-- <script src="js/modernizr.js"></script> -->
+	<!-- <script src="js/jquery.easing.1.3.js"></script> -->
 </head>
 <body>
 	<div id="parallax">
-		<header>
+		<header class="animated fadeIn">
 			<h1>Michael Suen</h1><h6>Designer. Illustrator. Writer.</h6>
 		</header>
 		<div class="parallax__layer parallax__layer__1">
@@ -106,6 +80,7 @@
 			<div class="container">
 				<div class="slide group" id="about">
 					<center>
+						<p class="notice">Portfolio coming soon — stay tuned</p>
 						<div class="sixteen columns add-top">
 							<div class="row">
 								<div class="sixteen columns">
@@ -124,7 +99,7 @@
 							</div>
 							<div class="row fourth-top">
 								<div class="eight columns offset-by-four alpha">
-									<a href="#contact" class="button"><div class="button"><div class="circle"><img src="images/me-icon.svg" class="vertical-align"></div> <h5>Get your free consultation</h5></div></a>
+									<a class="button"><div class="button" id="consult"><div class="circle"><img src="images/me-icon.svg" class="vertical-align"></div> <h5>Get your free consultation</h5></div></a>
 								<div class="four columns omega">
 								</div>
 							</div>
@@ -175,24 +150,51 @@
 				</div>
 				</div>-->
 				<div class="slide" id="social">
-					<div class="row">
-						<div class="five columns offset-by-three">
-							<h4 class="add-2x-bottom">First Contact</h4>
-							<div class="eight columns">
+					<div class="row vertical-align">
+						<div class="ten columns offset-by-three">
+							<h4 class="add-bottom">These Are A Few of My Favorite Things</h4>
+							<hr class="align-left">
+								<div class="favorite-things add-4x-bottom">
+									<div><i class="fa fa-rebel"></i> <span>Star Wars</span></div>
+									<div><i class="fa fa-road"></i> <span>Travel</span></div>
+									<div><i class="fa fa-gamepad"></i> <span>Games</span></div>
+									<div><i class="fa fa-beer"></i> <span>IPAs</span></div>
+									<div><i class="fa fa-tree"></i> <span>The Outdoors</span></div>
+								</div>
+						</div>
+						<div class="five columns offset-by-three clearfix">
+							<h4 class="add-bottom">First Contact</h4>
+							<hr class="align-left">
+							<div class="eight columns social-icons">
 								<a href="skype:m.suen?chat"><i class="fa fa-skype"></i> <span>Skype</span></a>
 								<a href="http://www.facebook.com/msuen"><i class="fa fa-facebook-official"></i> <span>Facebook</span></a>
 								<a href="http://www.instagram.com/poetichentai"><i class="fa fa-instagram"></i> <span>Instagram</span></a>
-								<a href="https://www.behance.net/msuen"><i class="fa fa-behance"></i> <span>Behance</span></a>
+								<a href="http://www.linkedin.com/in/michaelsuen"><i class="fa fa-linkedin"></i> <span>LinkedIn</span></a>
 							</div>
-							<div class="eight columns">
+							<div class="eight columns social-icons">
 								<a href="mailto:michael@suenlabs.com"><i class="fa fa-envelope"></i> <span>E-mail</span></a>
 								<a href="http://www.twitter.com/poetichentai"><i class="fa fa-twitter"></i> <span>Twitter</span></a>
-								<a href="http://www.linkedin.com/in/michaelsuen"><i class="fa fa-linkedin"></i> <span>LinkedIn</span></a>
+								<a href="https://www.behance.net/msuen"><i class="fa fa-behance"></i> <span>Behance</span></a>
 								<a href="http://www.medium.com/poetichentai"><i class="fa fa-medium"></i> <span>Medium</span></a>
 							</div>
 						</div>
-						<div class="four columns">
-							<h4>Tweets</h4>
+						<div class="five columns">
+							<h4 class="add-bottom">Latest Tweets</h4>
+							<hr class="align-left">
+							<div id="ms-tweets"></div>
+							<script>
+								var config4 = {
+								  "id": '565352793700335618',
+								  "domId": 'ms-tweets',
+								  "maxTweets": 2,
+								  "enableLinks": true,
+								  "showUser": false,
+								  "showTime": false,
+								  "showRetweet": false,
+								  "showInteraction": false
+								};
+								twitterFetcher.fetch(config4);
+							</script>
 						</div>
 					</div>
 				</div>
@@ -205,26 +207,14 @@
 					</center>
 				</div>
 				</div>
-			<!--
-				<nav id="bt-menu" class="bt-menu">
-					<a href="#" class="bt-menu-trigger"><span>Menu</span></a>
-					<ul>
-						<li><a href="#about" class="bt-icon icon-male">About</a></li>
-						<li><a href="#updates" class="bt-icon icon-exclamation-sign">Updates</a></li>
-						<li><a href="#notes" class="bt-icon icon-comment">Thoughts</a></li>
-						<li><a href="#projects" class="bt-icon icon-beaker">Projects</a></li>
-						<li><a href="#contact" class="bt-icon icon-envelope">Contact</a></li>
-					</ul>
-				</nav> -->
 		</div>
 	</div>
-<script src="js/classie.js"></script>
-<script src="js/borderMenu.js"></script>
 	<div id="tarpits">
 		<img src="https://farm8.staticflickr.com/7188/6970635809_aee672164c.jpg">
 	</div>
 	<div id="capitalist">
 		<img src="images/lufsig-hk.jpg">
 	</div>
+	<script src="js/script.js"></script>
 </body>
 </html>
