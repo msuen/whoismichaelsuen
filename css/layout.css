@@ -22,14 +22,27 @@
 
 	header { position:absolute; left:0; right:0; margin-left:auto; margin-right:auto; width: 800px; text-align: center;}
 	header h1 { padding-top: 100px; }
-	header h6 { text-transform: uppercase; font-size: 22px; font-size: 2.2rem; color: #8e3223;}
+	header h6 { text-transform: uppercase; font-size: 22px; font-size: 2.2rem; color: #d0512f;}
 	
 	#about { background-color: #1c0806; color: #ccc; padding-top: 30px; padding-top: 3.0rem;}
+	#about .circle { width: 60px; height: 60px; background: #f7f7f7; display: inline-block; margin-right: 5px; vertical-align: middle;}
+	#about .circle img { width: 70%; height: auto; }
+	#about h5 { display: inline-block; vertical-align: middle; margin-bottom: 0; margin-right: 5px;}
 	#about h6 { font-size: 24px; font-size: 2.4rem; display: inline-block; margin-bottom: 30px;}
-	#about span { font-family: 'Sentinel Ssm A', 'Sentinel Ssm B', Georgia, sans-serif; font-style: italic; text-transform: none; font-size: 16px; font-size: 1.6rem; padding-bottom: 10px;}
-	#about hr { width: 175px; border: solid 4px #fc2c22; margin-bottom: 40px; }
+	#about div.button { padding: 10px; border: #ccc solid 3px; border-radius: 100px; vertical-align: middle; }
+	#about span { font-family: 'Sentinel Ssm A', 'Sentinel Ssm B', Georgia, sans-serif; font-style: italic; text-transform: none; vertical-align: top; margin: 0 5px;}
+	#about hr { width: 175px; border: solid 4px #d0512f; margin-bottom: 40px; }
 	#about a, #about a:visited { color: #eee; text-decoration: none; padding-bottom: 2px; border-bottom: 1px solid #eee; }
-	#about a:hover {  }
+	#about a.button { padding: 0; border: none; }
+	#about a.button:hover div.button { background-color: #d0512f; border-color: #d0512f; color: #fff; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out}
+	#about .workplay, #about .workedplayed, #about .playwork { padding-bottom: none; border: none; }
+	#about .workplay span, #about .workedplayed span, #about .playwork span { color: #ccc; font-style: normal; vertical-align: none; padding-bottom: 10px; margin: 0;}
+	#about .workplay:hover span, #about .workedplayed:hover span, #about .playwork:hover span { display: none; cursor: default; }
+	#about .workplay:hover, #about .workedplayed:hover, #about .workplay:hover { cursor: default; }
+	#about .workplay:hover:before { content: "play"; cursor: default; }
+	#about .workedplayed:hover:before { content: "played with"; cursor: default; } 
+	#about .playwork:hover:before {content: "work"; cursor: default; }
+	#about a:hover { color: #fff; }
 	
 	#portfolio { background-color: #ccc; color: #fff; padding: 0; height: 680px; height: 68rem; }
 	#portfolio a { text-decoration: none; border-bottom: none; font-size: 0; }
@@ -281,12 +294,14 @@
 		html {
 			font-size: 13px;
 		}
+		#about p, #about span { font-size: 14px; font-size:1.4rem !important; }
 	}
 	
 	@media (max-width: 1400px) {
 		html {
 			font-size: 12px;
 		}
+		#about p, #about span { font-size: 16px; font-size:1.6rem !important; }
 	}
 	
 	/* target screen width  */
@@ -317,8 +332,6 @@
 	/* Tablet Portrait size to standard 960 (devices and browsers) */
 	@media only screen and (min-width: 768px) and (max-width: 959px) {
 		
-		#walking {  margin: 0 0 0 -150px; width: 500px; height: 500px; }
-		
 	}
 
 	/* All Mobile Sizes (devices and browser) */
@@ -343,17 +356,8 @@
 		
 		.center-if-mobile {text-align:center;}
 		
-		#fds div { opacity: 1; }
-		
 		#about { padding-bottom: 100px; padding-bottom: 10rem;}
-		
-		#updates { padding-bottom: 40px; padding-bottom: 4rem; }
-		#updates img:hover { margin-top: 0; }
-		#updates img { max-height: 400px; width: auto; }
-		.far-clouds { background: transparent url(../images/far-clouds.svg) 305px 600px repeat-x; }
-		.near-clouds { background: transparent url(../images/near-clouds.svg) 305px 700px repeat-x; }
-		#walking {  display: none; }
-		#walking-mobile { display: block; }
+		#about p, #about span { font-size: 24px; font-size:2.4rem !important; }
 		
 		#portfolio { padding: 0; height: auto; background-color: #fff; }
 		#portfolio .item {width: 100%; height: 200px; text-align: center; transition: all .5s; -webkit-transition: all .5s; z-index: 1;}
@@ -398,6 +402,11 @@
 		html {
 			font-size: 7px;
 		}
+	}
+
+	/* Height is lacking */
+	@media only screen and (max-height: 700px) {
+		header h1, header h6 { color: #fff; }
 	}
 
 

@@ -137,6 +137,14 @@
 		max-width: 100%;
 		height: auto; }
 
+/* #Buttons
+================================================== */
+
+	.button {
+		padding: 10px 30px;
+		display: inline-block;
+	}
+
 /* #Misc
 ================================================== */
 	.remove-bottom { margin-bottom: 0 !important; }
@@ -144,7 +152,8 @@
 	.add-bottom { margin-bottom: 20px !important; margin-bottom: 2rem !important; }
 	.add-2x-bottom { margin-bottom: 40px !important; margin-bottom: 4rem !important; }
 	.add-4x-bottom { margin-bottom: 80px !important; margin-bottom: 8rem !important; }
-	.half-top { margin-top: 40px; margin-top: 4rem !important; }
+	.fourth-top { margin-top: 20px; margin-top: 2rem !important; }
+	.half-top { margin-top: 40px; margin-top: 4rem !important;}
 	.add-top { margin-top: 80px; margin-top: 8rem !important; }
 	.subtract-top { margin-top: -40px; margin-top: -4rem !important; }
 	
@@ -152,5 +161,13 @@
 	.lspaced-10 { letter-spacing: 10px; letter-spacing: 1rem; }
 	.wspaced-10 { word-spacing: 10px; word-spacing: 1rem; }
 	.remove-right { margin-right: 0 !important; }
+
+	.circle {
+    border-radius: 50%;
+	}
+
+	.vertical-align {
+		position: relative; top: 50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%);
+	}
 
 
