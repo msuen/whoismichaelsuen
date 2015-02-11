@@ -18,11 +18,22 @@ $(document).ready(function(e) {
 resizePages();
 
 $(document).ready(function () {
-    $(window).scroll(function () {
-        if ($(document).scrollTop() < 100) {
+	var h = $(window).height();
+    var height  =  h < 806 ? 806 : h;
+    $("#parallax").scroll(function () {
+    	if ($("#parallax").scrollTop() > height ) {
+    		$("#parallax-container").addClass("alert");
+    	} else {
+    		$("#parallax-container").removeClass("alert");
+    	}
+        if ($("#parallax").scrollTop() > height + (height/2)) {
             $("#about").addClass("scrolled");
+            $("#social").addClass("scrolled");
+            $("#parallax-container").addClass("scrolled");
         } else {
             $("#about").removeClass("scrolled");
+            $("#social").removeClass("scrolled");
+            $("#parallax-container").removeClass("scrolled");
         }
     });
 });

@@ -19,16 +19,20 @@
 		min-height: 400px;
 		background: #f4e690;
 	}
+	#parallax-container .notice { position: fixed; right: 20px; top: 20px; background-color: #f7f7f7; padding: 5px 20px; border-radius: 30px; color: #333; -webkit-transition: opacity 0.3s linear; -moz-transition: opacity 0.3s linear; -o-transition: opacity 0.3s linear; -ms-transition: opacity 0.3s linear; transition: opacity 0.3s linear; opacity: 0; z-index: 9999; backface-visibility: hidden;}
+	#parallax-container.alert .notice { position: fixed; right: 20px; top: 20px; opacity: 1; z-index: 9999; backface-visibility: hidden;}
+	#parallax-container.scrolled .notice { background-color: #1c0806; color: #ccc; -webkit-transform:translateZ(0); -webkit-transition: all 0.3s linear; -moz-transition: all 0.3s linear; transition: all 0.3s linear}
 
 	header { position:absolute; left:0; right:0; margin-left:auto; margin-right:auto; width: 800px; text-align: center;}
 	header h1 { padding-top: 100px; }
 	header h6 { text-transform: uppercase; font-size: 22px; font-size: 2.2rem; color: #d0512f;}
 	
-	#about { background-color: #1c0806; color: #ccc; padding: 0; -webkit-transition: background-color 3s linear; -moz-transition: background-color 3s linear; -o-transition: background-color 3s linear; -ms-transition: background-color 3s linear; transition: background-color 3s linear; }
-	#about.scrolled { background-color: #f7f7f7; }
+	#about { background-color: #1c0806; color: #ccc; padding: 0; -webkit-transition: background-color 0.3s linear; -moz-transition: background-color 0.3s linear; -o-transition: background-color 0.3s linear; -ms-transition: background-color 0.3s linear; transition: background-color 0.3s linear; }
+	#about .sixteen.columns { display: block; }
+	#about.scrolled { background-color: #f7f7f7; -webkit-transition: background-color 0.5s linear; -moz-transition: background-color 0.5s linear; -o-transition: background-color 0.5s linear; -ms-transition: background-color 0.5s linear; transition: background-color 0.5s linear; }
+	#about.scrolled .sixteen.columns { display: none; }
 	#about .circle { width: 60px; height: 60px; background: #f7f7f7; display: inline-block; margin-right: 5px; vertical-align: middle;}
 	#about .circle img { width: 70%; height: auto; }
-	#about .notice { position: absolute; right: 20px; top: 20px; background-color: #f7f7f7; padding: 5px 20px; border-radius: 30px; color: #333; }
 	#about h5 { display: inline-block; vertical-align: middle; margin-bottom: 0; margin-right: 5px;}
 	#about h6 { font-size: 24px; font-size: 2.4rem; display: inline-block; margin-bottom: 30px;}
 	#about div.button { padding: 10px; border: #ccc solid 3px; border-radius: 100px; vertical-align: middle; }
@@ -36,7 +40,7 @@
 	#about hr { width: 175px; border: solid 4px #d0512f; margin-bottom: 40px; }
 	#about a, #about a:visited { font-weight: bold; color: #eee; text-decoration: none; padding-bottom: 2px; border-bottom: 1px solid #eee; }
 	#about a.button { padding: 0; border: none; }
-	#about a.button:hover div.button { background-color: #d0512f; border-color: #d0512f; color: #fff; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out}
+	#about a.button:hover div.button { background-color: #d0512f; border-color: #d0512f; color: #fff; -webkit-transform:translateZ(0); -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out}
 	#about .workplay, #about .workedplayed, #about .playwork { padding-bottom: none; border: none; }
 	#about .workplay span, #about .workedplayed span, #about .playwork span { color: #ccc; font-style: normal; vertical-align: none; padding-bottom: 10px; margin: 0;}
 	#about .workplay:hover span, #about .workedplayed:hover span, #about .playwork:hover span { display: none; cursor: default; }
@@ -62,7 +66,10 @@
 
 	#testimonial { }
 
-	#social { background-color: #f7f7f7; padding: 0; }
+	#social { background-color: #1c0806; padding: 0; -webkit-transition: background-color 0.3s linear; -moz-transition: background-color 0.3s linear; -o-transition: background-color 0.3s linear; -ms-transition: background-color 0.3s linear; transition: background-color 0.3s linear; }
+	#social.scrolled { background-color: #f7f7f7; -webkit-transition: background-color 0.5s linear; -moz-transition: background-color 0.5s linear; -o-transition: background-color 0.5s linear; -ms-transition: background-color 0.5s linear; transition: background-color 0.5s linear; }
+	#social .row { display: none; }
+	#social.scrolled .row { display: block; }
 	#social .favorite-things div { display: inline-block;}
 	#social .favorite-things i { margin-right: 10px; display: inline-block; vertical-align: middle; }
 	#social .favorite-things span { font-size: 16px; font-size: 1.6rem; display: inline-block; vertical-align: middle; margin-right: 50px;}
