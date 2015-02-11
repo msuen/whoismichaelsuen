@@ -57,8 +57,15 @@
 	#courtship {background-image: url('../images/header-courtship.png')}
 	#simondene {background-image: url('../images/header-simondene.png')}
 	#twentyonecb {background-image: url('../images/header-21cb.png')}
+
+	#testimonial { }
+
+	#social { background-color: #f7f7f7; }
+	#social a { display: block; margin-bottom: 20px; text-decoration: none; }
+	#social i { margin-right: 30px; width: 10px; display: inline-block; }
+	#social a span { font-size: 12px; font-size: 1.2rem; text-decoration: none; border-bottom: none; display: inline-block; vertical-align: middle;}
 		
-	#contact { background-color: #fffcf5; }
+	#contact { background-color: #1c0806; }
 	#contact h3 { font-size:60px; font-size:6rem }
 	#contact a, #contact a:visited { color: #e3e0db; }
 	#contact a:hover { color: #ef4723; -webkit-transition: color 0.5s; transition: color 0.35s; }
