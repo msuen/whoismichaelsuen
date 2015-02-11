@@ -70,9 +70,9 @@
 	#social.scrolled { background-color: #f7f7f7; -webkit-transition: background-color 0.5s linear; -moz-transition: background-color 0.5s linear; -o-transition: background-color 0.5s linear; -ms-transition: background-color 0.5s linear; transition: background-color 0.5s linear; }
 	#social .row { display: none; }
 	#social.scrolled .row { display: block; }
-	#social .favorite-things div { display: inline-block;}
-	#social .favorite-things i { margin-right: 10px; display: inline-block; vertical-align: middle; }
-	#social .favorite-things span { font-size: 16px; font-size: 1.6rem; display: inline-block; vertical-align: middle; margin-right: 50px;}
+	#social .favorite-things div { display: inline-block; float: left; }
+	#social .favorite-things i { margin-right: 8px; display: inline-block; vertical-align: middle; }
+	#social .favorite-things span { font-size: 16px; font-size: 1.6rem; display: inline-block; vertical-align: middle; margin-right: 40px;}
 	#social .social-icons a { display: block; margin-bottom: 20px; text-decoration: none; }
 	#social .social-icons i { margin-right: 30px; width: 10px; display: inline-block; vertical-align: middle; }
 	#social .social-icons a span { font-size: 12px; font-size: 1.2rem; text-decoration: none; border-bottom: none; display: inline-block; vertical-align: middle;}
@@ -84,12 +84,55 @@
 	#social p.tweet a { font-weight: bold; text-decoration: none; padding-bottom: 2px; letter-spacing: 0; border-bottom: 1px solid #666; color: #666;}
 	#social p.tweet a:hover { border-bottom: 1px solid #d0512f; }
 		
-	#contact { background-color: #1c0806; }
+	#contact { background-color: #fff; padding: 0; }
+	#contact .michael-photo { width: 50%; height: 100%; float: left; background: url('/images/me-photo.jpg') center no-repeat; background-size: cover;}
+	#contact .michael-contact { width: 50%; height: 100%; float: right; width: 50%; height: 100%; float: right; background-color: #fff; box-sizing: border-box;}
 	#contact h3 { font-size:60px; font-size:6rem }
 	#contact a, #contact a:visited { color: #e3e0db; }
 	#contact a:hover { color: #ef4723; -webkit-transition: color 0.5s; transition: color 0.35s; }
-	#contact .icon-4x { margin-right: 40px; margin-right: 4rem; }
-	#contact .icon-4x.last-icon { margin-right: 0; }
+	.contact-top { height: 40%; padding: 40px; box-sizing: border-box; }
+	.contact-top blockquote { border-left: 3px solid #ccc; padding-bottom: 10px;}
+	.contact-top p { color: #1c0806; font-size: 20px; font-size: 2.0rem; line-height: 1.3; margin-bottom: 10px}
+	.contact-top cite { font-style: normal; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; font-size: 10px; font-size: 1.0rem;}
+	.contact-top p, .contact-top cite { font-family: "Verlag A", "Verlag B", "Helvetica", sans-serif; }
+	.contact-bottom { height: 60%; padding: 40px; box-sizing: border-box; background-color: #ef4723;}
+	.contact-bottom p { color: #f7f7f7; font-size: 20px; font-size: 2.0rem;}
+	#mc_embed_signup input {
+		background: url(images/comment-author.gif) no-repeat scroll 7px 7px;
+		padding: 10px 0 10px 30px;
+		box-sizing: border-box;
+		width: 100%;
+		border: 3px solid #c9c9c9;
+		margin-bottom: 20px;
+		color: #fff;
+		border-radius: 30px;
+		font-family: "Verlag A", "Verlag B", "Helvetica", sans-serif;
+	}
+	#mc_embed_signup input::-webkit-input-placeholder { color: #fff; } #mc_embed_signup input:-moz-placeholder { color: #fff; opacity: 1; } #mc_embed_signup input::-moz-placeholder { color: #fff; opacity: 1; } #mc_embed_signup input:-ms-input-placeholder { color: #fff; }
+	#mc_embed_signup input[type="submit"] {
+		background-color: #fff;
+		border: 3px solid #fff;
+		color: #ef4723;
+		padding: 10px 0; 
+		font-family: "Verlag A", "Verlag B", "Helvetica", sans-serif;
+		font-weight: 800;
+		font-size: 20px;
+		font-size: 2.0rem;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		-webkit-transition: all .3s linear;
+		-moz-transition: all .3s linear;
+		transition: all .3s linear; 
+	}
+	#mc_embed_signup input[type="submit"]:hover {
+		background-color: #1c0806;
+		border: 3px solid #1c0806;
+		color: #fff;
+	}
+	#mc_embed_signup input:focus {
+		outline: none;
+		border: 3px solid #fff;
+	}
 	
 	.stage {
 		position: absolute;

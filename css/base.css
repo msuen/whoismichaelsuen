@@ -28,8 +28,6 @@
 		margin: 0;
 		padding: 0;
 		border: 0;
-		font-family: "Sentinel Ssm A", "Sentinel Ssm B", "Georgia", sans-serif; 
-		letter-spacing: -1px;
 		font-weight: 400;
 		font-size: 100%;
 		vertical-align: baseline; }
@@ -48,7 +46,9 @@
 	table {
 		border-collapse: collapse;
 		border-spacing: 0; }
-
+	html {
+		box-sizing: border-box;
+	}
 
 /* #Basic Styles
 ================================================== */
@@ -85,9 +85,10 @@
 
 	.wf-loading p { visibility: hidden; }
 	.wf-active p { visibility: visible; }
-	p { font-size: 14px; font-size: 1.4rem; margin: 0 0 20px 0; line-height: 1.6; letter-spacing: -1px;}
+	p { font-size: 14px; font-size: 1.4rem; margin: 0 0 20px 0; line-height: 1.6; letter-spacing: -1px; font-family: "Sentinel Ssm A", "Sentinel Ssm B", "Helvetica", sans-serif;}
 	p.lead { font-size: 28px; font-size: 2.8rem; }
 	p img { margin: 0; }
+	span { font-family: "Sentinel Ssm A", "Sentinel Ssm B", "Helvetica", sans-serif; letter-spacing: -1px; }
 
 	em { font-style: italic; }
 	strong { font-weight: 700; }
