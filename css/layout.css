@@ -85,7 +85,7 @@
 	#social p.tweet a:hover { border-bottom: 1px solid #d0512f; }
 		
 	#contact { background-color: #fff; padding: 0; }
-	#contact .michael-photo { width: 50%; height: 100%; float: left; background: url('/images/me-photo.jpg') center no-repeat; background-size: cover;}
+	#contact .michael-photo { width: 50%; height: 100%; float: left; background: url('../images/me-photo.jpg') center no-repeat; background-size: cover;}
 	#contact .michael-contact { width: 50%; height: 100%; float: right; width: 50%; height: 100%; float: right; background-color: #fff; box-sizing: border-box;}
 	#contact h3 { font-size:60px; font-size:6rem }
 	#contact a, #contact a:visited { color: #e3e0db; }
