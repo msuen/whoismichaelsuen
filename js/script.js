@@ -26,7 +26,7 @@ $(document).ready(function () {
     	} else {
     		$("#parallax-container").removeClass("alert");
     	}
-        if ($("#parallax").scrollTop() > height + (height/2)) {
+        if ($("#parallax").scrollTop() > height + (height/3)) {
             $("#about").addClass("scrolled");
             $("#social").addClass("scrolled");
             $("#parallax-container").addClass("scrolled");

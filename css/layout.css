@@ -23,7 +23,13 @@
 	#parallax-container.alert .notice { position: fixed; right: 20px; top: 20px; opacity: 1; z-index: 9999; backface-visibility: hidden;}
 	#parallax-container.scrolled .notice { background-color: #1c0806; color: #ccc; -webkit-transform:translateZ(0); -webkit-transition: all 0.3s linear; -moz-transition: all 0.3s linear; transition: all 0.3s linear}
 
-	header { position:absolute; left:0; right:0; margin-left:auto; margin-right:auto; width: 800px; text-align: center;}
+	header { position:absolute; left:0; right:0; margin-left:auto; margin-right:auto; width: 800px; text-align: center; 
+		  animation-delay: 2.5s;
+		    -webkit-animation-delay: 2.5s;
+		    -moz-animation-delay: 2.5s;
+		    -o-animation-delay: 2.5s;
+		    -ms-animation-delay: 2.5s;
+	}
 	header h1 { padding-top: 100px; }
 	header h6 { text-transform: uppercase; font-size: 22px; font-size: 2.2rem; color: #d0512f;}
 	
