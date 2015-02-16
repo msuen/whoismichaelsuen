@@ -27,9 +27,6 @@
   height: auto;
   z-index: 9999; }
 
-.parallax__layer__0 {
-  transform: translateZ(-400px) scale(5); }
-
 .parallax__layer__1 {
   transform: translateZ(-350px) scale(4.5); }
 .parallax__layer__1 img {
@@ -43,7 +40,7 @@
 .parallax__layer__2 {
   transform: translateZ(-300px) scale(4); }
 .parallax__layer__2 img {
-    bottom: -207px;
+    bottom: -7px;
     animation-delay: 1.7s;
     -webkit-animation-delay: 1.7s;
     -moz-animation-delay: 1.7s;
