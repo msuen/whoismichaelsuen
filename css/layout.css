@@ -424,6 +424,7 @@
 		html { font-size: 7px; }
 		header h6 { font-size: 20px; font-size: 2.0rem;}
 		#about h6 { font-size: 24px; font-size: 2.4rem; display: inline-block; margin-bottom: 5px;}
+		#about hr { margin-top: 20px;}
 		#about .circle { width: 40px; height: 40px; }
 	}
 
