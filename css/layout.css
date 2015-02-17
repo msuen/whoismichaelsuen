@@ -45,7 +45,7 @@
 	#about .circle { width: 60px; height: 60px; background: #f7f7f7; display: inline-block; margin-right: 5px; vertical-align: middle;}
 	#about .circle img { width: 70%; height: auto; }
 	#about h5 { display: inline-block; vertical-align: middle; margin-bottom: 0; margin-right: 5px; }
-	#about h6 { font-size: 28px; font-size: 2.8rem; display: inline-block; margin-bottom: 30px; line-height: 1.4;}
+	#about h6 { font-size: 28px; font-size: 2.8rem; display: inline-block; margin-bottom: 30px; }
 	#about div.button { padding: 10px; border: #ccc solid 3px; border-radius: 100px; vertical-align: middle; }
 	#about span { font-family: 'Sentinel Ssm A', 'Sentinel Ssm B', Georgia, sans-serif; font-style: italic; text-transform: none; vertical-align: top; margin: 0 5px;}
 	#about hr { width: 175px; border: solid 4px #d0512f; margin-bottom: 40px; }
@@ -423,7 +423,7 @@
 	@media only screen and (max-width: 479px) {
 		html { font-size: 7px; }
 		header h6 { font-size: 20px; font-size: 2.0rem;}
-		#about h6 { font-size: 24px; font-size: 2.4rem; display: inline-block; }
+		#about h6 { font-size: 24px; font-size: 2.4rem; display: inline-block; margin-bottom: 5px;}
 		#about .circle { width: 40px; height: 40px; }
 	}
 
