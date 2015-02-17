@@ -78,19 +78,25 @@
 	#testimonial { }
 
 	#social { background-color: #1c0806; padding: 0; -webkit-transition: background-color 0.3s linear; -moz-transition: background-color 0.3s linear; -o-transition: background-color 0.3s linear; -ms-transition: background-color 0.3s linear; transition: background-color 0.3s linear; -webkit-backface-visibility: hidden; -webkit-perspective: 1000;}
-	#social .favorite-things div { display: inline-block; float: left; }
+	#social h4 { font-size: 16px; margin-bottom: 10px;}
+	#social .now-reading img, #social .now-listening img {height: 50px; width: auto; float: left; margin-right: 10px; box-shadow: 1px 1px 2px #ccc;}
+	#social .now-reading p, #social .now-listening p { font-size: 14px; }
+	#social .now-reading a, #social .now-listening a { text-decoration: none; padding-bottom: 1px; border-bottom: 1px #333 solid; }
+	#social .now-reading a:hover, #social .now-listening a:hover { border-bottom: 1px #d0512f solid;}
+	#social .favorite-things { overflow: hidden; }
+	#social .favorite-things div { display: inline-block; float: left;}
 	#social .favorite-things i { margin-right: 8px; display: inline-block; vertical-align: middle; }
 	#social .favorite-things span { font-size: 16px; font-size: 1.6rem; display: inline-block; vertical-align: middle; margin-right: 40px;}
 	#social .social-icons a { display: block; margin-bottom: 20px; text-decoration: none; }
 	#social .social-icons i { margin-right: 30px; width: 10px; display: inline-block; vertical-align: middle; }
 	#social .social-icons a span { font-size: 12px; font-size: 1.2rem; text-decoration: none; border-bottom: none; display: inline-block; vertical-align: middle;}
 	#social .social-icons a:hover { color: #d0512f; }
-	#social hr { width: 80px; border: solid 4px #d0512f; margin-bottom: 30px; }
+	#social hr { width: 80px; border: solid 4px #d0512f; margin: 0px 0 20px 0; }
 	#social p.tweet:before { content: '“'; font-weight:bold; }
 	#social p.tweet:after { content: '”'; font-weight:bold; }
 	#social p.tweet { font-size: 12px; font-size: 1.2rem; font-style: italic; letter-spacing: 0; line-height: 1.6; color: #666;}
 	#social p.tweet a { font-weight: bold; text-decoration: none; padding-bottom: 2px; letter-spacing: 0; border-bottom: 1px solid #666; color: #666;}
-	#social p.tweet a:hover { border-bottom: 1px solid #d0512f; }
+	#social p.tweet a:hover { color: #d0512f; border-bottom: 1px solid #d0512f; }
 		
 	#contact { background-color: #fff; padding: 0; }
 	#contact .michael-photo { width: 50%; height: 100%; float: left; background: url('../images/me-photo.jpg') center no-repeat; background-size: cover;}
@@ -124,8 +130,8 @@
 		padding: 10px 0; 
 		font-family: "Verlag A", "Verlag B", "Helvetica", sans-serif;
 		font-weight: 800;
-		font-size: 16px;
-		font-size: 1.6rem;
+		font-size: 14px;
+		font-size: 1.4rem;
 		text-transform: uppercase;
 		letter-spacing: 2px;
 		-webkit-transition: all .3s linear;
@@ -292,14 +298,17 @@
 		}
 		#social .social-icons {
 			width: 50%;
-			margin-bottom: 40px !important;
+			margin-bottom: 30px !important;
 		}
 		#social .favorite-things {
-			margin-bottom: 40px !important;
+			margin-bottom: 30px !important;
 		}
 		#social .favorite-things div {
 			margin-bottom: 20px;
 			width: 50%;
+		}
+		#social div.now-reading, #social div.now-listening {
+			overflow: hidden; margin-bottom: 40px !important;
 		}
 		#social .favorite-things i, #social .favorite-things span, #social .social-icons a span, #social .social-icons a i, #social p.tweet {
 			font-size: 16px;
@@ -351,6 +360,10 @@
 		}
 		#mc_embed_signup input {
 			font-size: 22px;
+		}
+		#mc_embed_signup input[type="submit"] {
+			font-size: 18px;
+			font-size: 1.8rem;
 		}
 		
 		body {
