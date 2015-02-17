@@ -4,7 +4,7 @@ $(function() {
 
 
 var uagent = navigator.userAgent.toLowerCase();
-if(/safari/.test(uagent) && !/chrome/.test(uagent))
+if(/safari/.test(uagent) && !/chrome/.test(uagent) || /firefox/.test(uagent))
 {
     $('.parallax__layer').css('display','none');
     $('header.desktop').css('display','none');
