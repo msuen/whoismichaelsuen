@@ -3,9 +3,11 @@ $(function() {
 });
 
 function resizePages() {
-    var h = $(window).height();
-    var height  =  h < 806 ? 806 : h;
-    $('.slide').css('height',height);
+	    var h = $(window).height();
+	    var height  =  h < 806 ? 806 : h;
+	    if (Modernizr.mq('only all and (min-width: 768px)')) {
+		    $('.slide').css('height',height);
+		}
 }
 
 $(window).resize(function(e) {
@@ -20,6 +22,7 @@ resizePages();
 $(document).ready(function () {
 	var h = $(window).height();
     var height  =  h < 806 ? 806 : h;
+	$("#social-center").addClass("vertical-align");
     $("#parallax").scroll(function () {
     	if ($("#parallax").scrollTop() > height ) {
     		$("#parallax-container").addClass("alert");
