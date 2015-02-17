@@ -79,7 +79,8 @@
 
 	#social { background-color: #1c0806; padding: 0; -webkit-transition: background-color 0.3s linear; -moz-transition: background-color 0.3s linear; -o-transition: background-color 0.3s linear; -ms-transition: background-color 0.3s linear; transition: background-color 0.3s linear; -webkit-backface-visibility: hidden; -webkit-perspective: 1000;}
 	#social h4 { font-size: 16px; margin-bottom: 10px;}
-	#social .now-reading img, #social .now-listening img {height: 50px; width: auto; float: left; margin-right: 10px; box-shadow: 1px 1px 2px #ccc;}
+	#social .now-reading img, #social .now-listening img {height: 50px; width: auto; float: left; margin-right: 10px; box-shadow: 1px 1px 2px #ccc; -webkit-transition: all 0.05s linear; -moz-transition: all 0.05s linear; -o-transition: all 0.05s linear; -ms-transition: all 0.05s linear; transition: all 0.05s linear;}
+	#social .now-reading img:hover, #social .now-listening img:hover {height: 65px; width: auto; }
 	#social .now-reading p, #social .now-listening p { font-size: 14px; }
 	#social .now-reading a, #social .now-listening a { text-decoration: none; padding-bottom: 1px; border-bottom: 1px #333 solid; }
 	#social .now-reading a:hover, #social .now-listening a:hover { border-bottom: 1px #d0512f solid;}
@@ -96,6 +97,7 @@
 	#social p.tweet:after { content: '”'; font-weight:bold; }
 	#social p.tweet { font-size: 12px; font-size: 1.2rem; font-style: italic; letter-spacing: 0; line-height: 1.6; color: #666;}
 	#social p.tweet a { font-weight: bold; text-decoration: none; padding-bottom: 2px; letter-spacing: 0; border-bottom: 1px solid #666; color: #666;}
+	#social p.tweet a span { font-weight: bold; }
 	#social p.tweet a:hover { color: #d0512f; border-bottom: 1px solid #d0512f; }
 		
 	#contact { background-color: #fff; padding: 0; }
@@ -121,6 +123,7 @@
 		color: #fff;
 		border-radius: 30px;
 		font-family: "Verlag A", "Verlag B", "Helvetica", sans-serif;
+		white-space: normal;
 	}
 	#mc_embed_signup input::-webkit-input-placeholder { color: #fff; } #mc_embed_signup input:-moz-placeholder { color: #fff; opacity: 1; } #mc_embed_signup input::-moz-placeholder { color: #fff; opacity: 1; } #mc_embed_signup input:-ms-input-placeholder { color: #fff; }
 	#mc_embed_signup input[type="submit"] {
@@ -158,9 +161,9 @@
 		z-index: 0;
 	}
 	
-	#tarpits, #capitalist { display:none; padding: 30px; background: #FFF; box-shadow: 0px 0px 4px rgba(0,0,0,0.7); -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.7); -moz-box-shadow: 0 0px 4px rgba(0,0,0,0.7); max-width: 85%; }
+	#tarpits, #capitalist, #current-music, #current-reading { display:none; padding: 30px; background: #FFF; box-shadow: 0px 0px 4px rgba(0,0,0,0.7); -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.7); -moz-box-shadow: 0 0px 4px rgba(0,0,0,0.7); max-width: 85%; }
 	
-	#tarpits img, #capitalist img { width: 100%; }
+	#tarpits img, #capitalist img, #current-music img, #current-reading img { width: 100%; }
 
 	.copyright-props {
 		height: 50px;
@@ -288,7 +291,7 @@
 		
 		#about { padding: 40px 20px 120px; }
 		#about p, #about span { font-size: 24px; font-size:2.4rem !important; }
-		#about h5 { font-size: 12px; }
+		#about h5 { font-size: 12px; word-break: break-word; max-width: 200px; line-height: 1.6; }
 		#social {
 			background-color: #fff;
 			padding: 60px 20px;
@@ -405,24 +408,21 @@
 			margin-bottom: 0;
 		}
 		
-		#tarpits, #capitalist { width: 85%; padding: 10px; padding: 1rem; }
+		#tarpits, #capitalist, #current-music, #current-reading { width: 85%; padding: 10px; padding: 1rem; }
 
 
 	}
 
 	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 	@media only screen and (min-width: 480px) and (max-width: 767px) {
-		html {
-			font-size: 7.5px;
-		}
+		html { font-size: 7.5px; }
 		#about, #social { padding: 60px 80px; }
 	}
 
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 	@media only screen and (max-width: 479px) {
-		html {
-			font-size: 7px;
-		}
+		html { font-size: 7px; }
+		#about .circle { width: 40px; height: 40px; }
 	}
 
 	/* Small Desktop */
