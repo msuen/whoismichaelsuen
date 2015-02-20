@@ -99,6 +99,7 @@
 	#social p.tweet a { font-weight: bold; text-decoration: none; padding-bottom: 2px; letter-spacing: 0; border-bottom: 1px solid #666; color: #666;}
 	#social p.tweet a span { font-weight: bold; }
 	#social p.tweet a:hover { color: #d0512f; border-bottom: 1px solid #d0512f; }
+	#social p.tweet img { height: 20px; width: auto; }
 		
 	#contact { background-color: #fff; padding: 0; }
 	#contact .michael-photo { width: 50%; height: 100%; float: left; background: url('../images/me-photo.jpg') center no-repeat; background-size: cover;}
@@ -442,9 +443,12 @@
 		}
 	}
 
-	/* Height */
-	@media only screen and (max-height: 712px) and (min-width: 768px) {
+	@media only screen and (max-height: 728px) and (min-width: 768px) {
 		header h6 {
 			color: #fff;
+			background-color: #3a1d11;
+			border-radius: 80px;
+			display: inline-block;
+			padding: 6px 20px;
 		}
 	}
