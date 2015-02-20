@@ -81,7 +81,7 @@
 	#social h4 { font-size: 16px; margin-bottom: 10px; line-height: 1.4;}
 	#social .now-reading img, #social .now-listening img {height: 50px; width: auto; float: left; margin-right: 10px; box-shadow: 1px 1px 2px #ccc; -webkit-transition: all 0.05s linear; -moz-transition: all 0.05s linear; -o-transition: all 0.05s linear; -ms-transition: all 0.05s linear; transition: all 0.05s linear;}
 	#social .now-reading img:hover, #social .now-listening img:hover {height: 65px; width: auto; }
-	#social .now-reading p, #social .now-listening p { font-size: 14px; }
+	#social .now-reading p, #social .now-listening p { font-size: 14px; margin: 0;}
 	#social .now-reading a, #social .now-listening a { text-decoration: none; padding-bottom: 1px; border-bottom: 1px #333 solid; }
 	#social .now-reading a:hover, #social .now-listening a:hover { border-bottom: 1px #d0512f solid;}
 	#social .favorite-things { overflow: hidden; }
@@ -114,7 +114,7 @@
 	.contact-bottom { height: 60%; padding: 40px; box-sizing: border-box; background-color: #ef4723;}
 	.contact-bottom p { color: #f7f7f7; font-size: 20px; font-size: 2.0rem;}
 	#mc_embed_signup input {
-		background: url(images/comment-author.gif) no-repeat scroll 7px 7px;
+		background: url(/images/comment-author.gif) no-repeat scroll 7px 7px;
 		padding: 10px 0 10px 30px;
 		box-sizing: border-box;
 		width: 100%;
@@ -311,7 +311,7 @@
 			width: 50%;
 		}
 		#social div.now-reading, #social div.now-listening {
-			overflow: hidden; margin-bottom: 40px !important;
+			overflow: hidden; margin-bottom: 50px !important;
 		}
 		#social .favorite-things i, #social .favorite-things span, #social .social-icons a span, #social .social-icons a i, #social p.tweet {
 			font-size: 16px;
@@ -439,5 +439,12 @@
 	@media only screen and (min-width: 1224px) {
 		#about h5 {
 			font-size: 22px;
+		}
+	}
+
+	/* Height */
+	@media only screen and (max-height: 712px) and (min-width: 768px) {
+		header h6 {
+			color: #fff;
 		}
 	}
