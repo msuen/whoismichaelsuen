@@ -24,31 +24,77 @@ function resizePages() {
 
 $(window).resize(function(e) {
     resizePages();
+    $.waypoints('refresh');
 });
 resizePages();
 $(document).ready(function(e) {
     resizePages();
+    $.waypoints('refresh');
 });
 resizePages();
 
 $(document).ready(function () {
 	var h = $(window).height();
     var height  =  h < 806 ? 806 : h;
-	$("#social-center").addClass("vertical-align");
     $("#parallax").scroll(function () {
     	if ($("#parallax").scrollTop() > height ) {
     		$("#parallax-container").addClass("alert");
     	} else {
     		$("#parallax-container").removeClass("alert");
     	}
-        if ($("#parallax").scrollTop() > height + (height/3)) {
+        if ($("#parallax").scrollTop() > height + (height/5)) {
             $("#about").addClass("scrolled");
-            $("#social").addClass("scrolled");
+            $("#services").addClass("scrolled");
             $("#parallax-container").addClass("scrolled");
         } else {
             $("#about").removeClass("scrolled");
-            $("#social").removeClass("scrolled");
+            $("#services").removeClass("scrolled");
             $("#parallax-container").removeClass("scrolled");
         }
+        if ($(".parallax__cover").height() - height - $("#parallax").scrollTop() < height) {
+            $("#parallax-container").removeClass("alert");
+        }
     });
+});
+
+$(document).ready(function () {
+    $('#portfolio-img').waypoint(function() {
+           $(this).toggleClass($(this).data('animated'));
+           $('.insert').toggleClass($('.insert').data('animated'));
+           },
+        { offset: '100%',
+        context: '#parallax',
+        triggerOnce: true
+        });
+
+    $('#services-left').waypoint(function() {
+           $(this).toggleClass($(this).data('animated'));
+           },
+        { offset: '100%',
+        context: '#parallax'
+        });
+
+    $('#services-right').waypoint(function() {
+           $(this).toggleClass($(this).data('animated'));
+           },
+        { offset: '100%',
+        context: '#parallax'
+        });
+
+    $('#sign-up').waypoint(function() {
+           $(this).toggleClass($(this).data('animated'));
+           },
+        { offset: '100%',
+        context: '#parallax',
+        triggerOnce: true
+    });
+
+    $(function() {    
+        $('.item-link').click(function(event) {
+          event.preventDefault();
+          $('img.screen').attr('src','../images/screen-' + $(this).data('rel') + '.jpg');
+          $('.window-yes').toggleClass('window-yes window-no');
+          $('#' + $(this).data('rel') + '-d').toggleClass('window-no window-yes');
+        })
+      })
 });
