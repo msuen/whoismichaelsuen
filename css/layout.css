@@ -389,7 +389,7 @@
 			overflow: hidden; margin-bottom: 50px !important;
 		}
 		#social .favorite-things i, #social .favorite-things span, #social .social-icons a span, #social .social-icons a i, #social p.tweet {
-			font-size: 16px;
+			font-size: 12px;
 			word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto;
 		}
 		#social .row, #contact .row {
