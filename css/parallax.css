@@ -2,6 +2,7 @@
   perspective: 100px;
   height: 100vh; 
   overflow-x: hidden;
+  overflow-y: auto;
   }
 
 .parallax__layer {
@@ -18,7 +19,8 @@
   display: block;
   position: absolute;
   bottom: 0; 
-  z-index: -10; }
+  z-index: -10;
+}
 
 .parallax__cover {
   background: #1c0806;
@@ -36,7 +38,8 @@
 }
 
 .parallax__layer__1 {
-  transform: translateZ(-350px) scale(4.5); }
+  transform: translateZ(-350px) scale(4.5);
+}
 .parallax__layer__1 img {
     animation-delay: 1.3s;
     -webkit-animation-delay: 1.3s;
@@ -46,7 +49,8 @@
 }
 
 .parallax__layer__2 {
-  transform: translateZ(-300px) scale(4); }
+  transform: translateZ(-300px) scale(4);
+}
 .parallax__layer__2 img {
     bottom: -7px;
     animation-delay: 1.2s;
