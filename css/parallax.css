@@ -2,7 +2,6 @@
   perspective: 100px;
   height: 100vh; 
   overflow-x: hidden;
-  overflow-y: auto;
   }
 
 .parallax__layer {
@@ -130,4 +129,9 @@
 @media only screen and (min-width: 768px) {
   .parallax__layer, #parallax header.desktop { display: block; }
   .no_parallax_mobile__layer { display: none;}
+}
+
+@media only screen and (min-width: 1601px) {
+  .parallax__layer img { width: 100%; }
+  .parallax__layer { margin-left: -50%; }
 }
