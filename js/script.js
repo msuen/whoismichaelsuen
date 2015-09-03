@@ -36,7 +36,6 @@ resizePages();
 $(document).ready(function () {
 	var h = $(window).height();
     var height  =  h < 806 ? 806 : h;
-    $("#parallax").scroll(function () {
     	if ($("#parallax").scrollTop() > height ) {
     		$("#parallax-container").addClass("alert");
     	} else {
