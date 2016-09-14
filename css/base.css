@@ -86,7 +86,12 @@
 	p.lead { font-size: 28px; font-size: 2.8rem; }
 	p img { margin: 0; }
 	span { font-family: "Sentinel Ssm A", "Sentinel Ssm B", "Helvetica", sans-serif; letter-spacing: -1px; }
-
+	abbr, abbr[title] {
+	    font-size: 85%;
+	    letter-spacing: 1px;
+	    text-transform: uppercase;
+	    border-bottom: none;
+	}
 	em { font-style: italic; }
 	strong { font-weight: 700; }
 	small { font-size: 80%; }
